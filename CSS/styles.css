@@ -1,14 +1,63 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+* {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
 
-/* .section1 {
-    background-color: rgba(27, 65, 5, 0.726);
-} */
+
+
 
 nav {
     text-align: center;
     margin-bottom: 75px;
     font-size: 25px;
+}
+
+/* .title, .main {
+    background-color: rgba(27, 65, 5, 0.726);
+    padding: 2px;
+    border-radius: 10px;
+    width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+} */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .title, .main {
+        background-color: rgba(27, 65, 5, 0.726);
+        padding: 2px;
+        border-radius: 10px;
+        width: 600px;
+        margin: auto;
+        margin-bottom: 20px;
+    }   
+    h1 {
+        font-size: 30px;
+    }
+    h2{
+        font-size-15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .title, .main {
+        background-color: rgba(27, 65, 5, 0.726);
+        padding: 2px;
+        border-radius: 10px;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }  
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 12px;
+    }
 }
 
 ul {
@@ -22,10 +71,10 @@ li{
     display: inline;
     margin: 10px;
 }
+
 a {
     text-decoration: none;
 }
-
 a:link {
     color: blue;
     text-decoration: none;
@@ -41,13 +90,9 @@ a:active {
     color: green;
 }
 
-
-h1, h2 {
-    font-family: Roboto, sans-serif;
-}
-
 h1 {
-    font-size: 50px;
+    font-family: Roboto, sans-serif;
+    /* font-size: 50px; */
     font-weight: 400;
     text-transform: uppercase;
     color: rgb(247, 64, 8);
@@ -61,6 +106,7 @@ h1 {
 }
 
 h2 {
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     color: tomato;
     text-shadow: -2px 2px 4px #00f;
@@ -75,10 +121,3 @@ p {
     text-shadow: -2px 2px 4px #000;
 }
 
-div {
-    background-color: rgba(27, 65, 5, 0.726);
-    padding: 2px;
-    border-radius: 10px;
-    width: 1000px;
-    margin: auto;
-}
