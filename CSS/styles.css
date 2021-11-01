@@ -7,16 +7,6 @@
     box-sizing: border-box;
 }
 
-.title, .main {
-    margin-top: 20px;
-}
-
-img {
-    display: block;
-    width: 25%;
-    margin: 0 auto;
-}
-
 body {
     background-color: rgb(68, 87, 68);
 }
@@ -27,23 +17,36 @@ nav {
     font-size: 25px;
 }
 
-ul {
+
     /* list-style-type: none; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    /* padding: 10px; */
+
+ul {    
     text-align: center;
-    padding: 10px;
-    border-radius: 8px;
 }
-li{
+li {
     display: inline;
     margin: 10px;
+    color: darkcyan;
 }
+
+.ul1 {    
+    text-align: center;
+}
+.li1 {
+    display: inline;
+    margin: 1px;
+    color: rgb(0, 139, 104);
+    font-size: 20px;
+}
+
 
 a {
     text-decoration: none;
 }
 a:link {
-    color: blue;
+    color: deeppink;
     text-decoration: none;
 }
 a:visited {
@@ -54,72 +57,86 @@ a:hover {
     text-decoration: underline;
 }
 a:active {
-    color: green;
+    color: darkcyan;
 }
+
+
+img {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 5px #465202;
+}
+
+.main {
+    background-color: rgba(27, 65, 5, 0.726);
+    margin: 20px auto;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
+
 
 h1 {
     font-family: Roboto, sans-serif;
-    /* font-size: 50px; */
+    font-size: 50px;
     font-weight: 400;
+    background-color: rgba(27, 65, 5, 0.726);
     text-transform: uppercase;
     color: rgb(247, 64, 8);
     text-shadow: -2px 2px 4px #00f;
+    
     border-top: 5px solid yellow;
     border-bottom: 5px solid  yellow;
     padding: 20px;
     text-align: center;
     margin: 5% 20%;
     border-radius: 10px;
-}
 
-h2 {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: tomato;
-    text-shadow: -2px 2px 4px #00f;
 }
 
 p {
     font-family: Roboto, sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    background-color:rgb(89, 218, 95);
-    color: white;
-    text-shadow: -2px 2px 4px #000;
+    font-size: 20px;
+    color: tomato;
 }
 
-
 @media (min-width: 481px) and (max-width: 768px) {
-    .title, .main {
-        background-color: rgba(27, 65, 5, 0.726);
+    .main {
         padding: 2px;
-        border-radius: 10px;
-        width: 600px;
+        width: 350px;
+        height: 350px;
         margin: auto;
         margin-bottom: 20px;
     }   
     h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
-    h2{
-        font-size-15px;
+    p{
+        font-size:15px;
+    }
+    .li1 {
+        font-size: 15px;
     }
 
 }
 
 @media (max-width: 480px) {
-    .title, .main {
-        background-color: rgba(27, 65, 5, 0.726);
+    .main {
         padding: 2px;
-        border-radius: 10px;
-        width: 300px;
+        width: 275px;
+        height: 275px;
         margin: auto;
         margin-bottom: 20px;
     }  
     h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
-    h2 {
+    p {
+        font-size: 12px;
+    }
+    .li1 {
         font-size: 12px;
     }
 }
